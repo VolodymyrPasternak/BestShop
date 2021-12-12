@@ -20,6 +20,9 @@
 .green {
     background-color: var(--color-green);
 }
+.white {
+    background-color: var(--color-white);
+}
 
 
 html {
@@ -187,7 +190,7 @@ Statistic section
 }
 
 .statistic-element-eye {
-    width: 65.43px;
+    width: 66px;
     position: absolute;
     content: "";
     right: -37%;
@@ -228,8 +231,283 @@ Benefit section
 
 .benefit-section {
     background-color: var(--color-light-grey);
+    display: flex;
+    justify-content: center;
 }
 
 .benefit-section-wrapper {
-    width: 1124px;
+    max-width: 1124px;
+    width: 100%;
+    margin: 105px 0;
+}
+
+.benefit-block {
+    background-color: var(--color-white);
+    margin-bottom: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 370px;
+}
+
+.benefit-block:last-child {
+    background-color: var(--color-light-grey);
+}
+
+.benefit-block-content {
+    width: 416px;
+    margin: 35px;
+}
+
+.benefit-block-content-last {
+    width: 623px;
+
+}
+
+.line {
+    width: 328px;
+    height: 4px;
+}
+
+.benefit-block-content-header {
+    font-family: var(--primary-font);
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 30px;
+}
+
+.benefit-block-content-text {
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: var(--color-black);
+    display: block;
+    margin-bottom: 50px;
+}
+
+.benefit-block-image1 {
+    margin-right: 71px;
+    width: 433px;
+    position: relative;
+}
+
+.benefit-block-image1::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    transform: rotate(45deg);
+    right: 45px;
+    top: 45px;
+    background-color: var(--color-redish);
+}
+
+.benefit-block-image1-macbook {
+    width: 386px;
+    content: "";
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    margin-top: 76px;
+    margin-right: 66px;
+}
+
+/*
+Pricing Section
+ */
+
+.pricing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-section-header {
+    font-family: var(--primary-font);
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+    color: var(--color-black);
+    margin-top: 100px;
+
+}
+
+.pricing-section-wrapper {
+    max-width: 1266px;
+    width: 100%;
+}
+
+.pricing-col1 {
+    margin-top: 71px;
+    width: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.include {
+    background: url("../assets/Checkmark-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 11px;
+    height: 11px;
+    margin-left: 10px;
+    display: block;
+}
+
+/*
+Contact Section
+ */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 59px;
+}
+
+.contact-header {
+    font-family: var(--primary-font);
+    color: var(--color-black);
+    font-size: 4.9rem;
+    font-weight: 400;
+    line-height: 5.7rem;
+    margin-bottom: 22px;
+}
+
+.contact-text {
+    font-family: var(--secondary-font);
+    color: var(--color-black);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin-bottom: 42px;
+}
+
+.contact-data-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.contact-data {
+    font-family: var(--secondary-font);
+    color: var(--color-grey);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    margin-right: 20px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    width: 27px;
+}
+
+.contact-col2 {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+}
+
+.form-label {
+    font-family: var(--secondary-font);
+    color: var(--color-primary);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: .328rem;
+}
+
+.form-input {
+    border: none;
+    height: 42px;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    border-bottom: 1px solid var(--color-grey);
+    font-family: var(--secondary-font);
+    color: var(--color-grey);
+}
+
+.contact-checkbox {
+    display: flex;
+}
+
+.checkbox:focus{
+    background-color: white;
+    border: 1px solid #6A6A6A;
+}
+
+.checkbox[type="checkbox"] {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.checkbox:checked {
+    background-image: url("../assets/Checkmark.svg");
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*
+Page Footer
+ */
+
+.page-footer {
+    width: 100%;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-light-grey);
+    box-shadow: 0 -5px 40px var(--color-grey);
+}
+
+.page-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-footer-logo {
+    color: var(--color-primary);
+    font-family: var(--primary-font);
+    font-weight: 300;
+    font-size: 2.6rem;
+    line-height: 3rem;
+}
+
+.copy {
+    color: var(--color-grey);
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-top: 7px;
+}
+
+.icon-wrapper {
+    display: flex;
+    width: 64px;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 24px;
 }
