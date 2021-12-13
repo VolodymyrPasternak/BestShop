@@ -37,14 +37,14 @@
             <h2 class="statistic-section-header">The most popular sales platform in country</h2>
             <div class="statistic-element-wrapper">
                 <div class="statistic-element">
-                    <div class="statistic-element-circle redish">
+                    <div class="statistic-element-circle redish-bg">
                         <img src="assets/Person.svg" alt="" class="statistic-element-person">
                     </div>
                     <h4 class="statistic-element-header">100000+</h4>
                     <p class="statistic-element-text">daily entries</p>
                 </div>
                 <div class="statistic-element">
-                    <div class="statistic-element-circle primary">
+                    <div class="statistic-element-circle primary-bg">
                         <img src="assets/Eye.svg" alt="" class="statistic-element-eye">
                     </div>
                     <h4 class="statistic-element-header">2000000+</h4>
@@ -52,7 +52,7 @@
                         every day</p>
                 </div>
                 <div class="statistic-element">
-                    <div class="statistic-element-circle green">
+                    <div class="statistic-element-circle green-bg">
                         <img src="assets/Catalog.svg" alt="" class="statistic-element-catalog">
                     </div>
                     <h4 class="statistic-element-header">10000+</h4>
@@ -68,7 +68,7 @@
                         <p class="benefit-block-content-text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua. Ut enim ad minim veniam.</p>
-                        <div class="line redish"></div>
+                        <div class="line redish-bg"></div>
                     </div>
                     <div class="benefit-block-image1">
                         <img src="assets/Macbook.png" alt="" class="benefit-block-image1-macbook">
@@ -84,18 +84,18 @@
                         <p class="benefit-block-content-text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua. Ut enim ad minim veniam.</p>
-                        <div class="line primary"></div>
+                        <div class="line primary-bg"></div>
                     </div>
                 </div>
                 <div class="benefit-block">
-                    <div class="benefit-block-content-last white">
+                    <div class="benefit-block-content-last white-bg">
                         <h4 class="benefit-block-content-header">Increase recognition<br> your brand!</h4>
                         <p class="benefit-block-content-text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua. Ut enim ad minim veniam.</p>
-                        <div class="line green"></div>
+                        <div class="line green-bg"></div>
                     </div>
-                    <div class="benefit-block-image3 green">
+                    <div class="benefit-block-image3 green-bg">
                         <img src="assets/Trumpet.png" alt="" class="benefit-block-image3-trumpet">
                     </div>
                 </div>
@@ -104,15 +104,44 @@
         <section class="pricing-section">
             <h4 class="pricing-section-header">Pricing</h4>
             <div class="pricing-section-wrapper">
-                <ul class="pricing-col1">
-                    <li class="">basic</li>
-                    <li class="">$0</li>
-                    <li class="include">100 MB HDD</p>
-                    <li>1 Subdomain</li>
-                    <li>2 E-mails</li>
-                    <li>Two years licence</li>
-                    <li>Full support</li>
-                </ul>
+                <div class="pricing-col red-border">
+                    <div>
+                        <h5 class="pricing-pack">basic</h5>
+                        <p class="price redish">$0</p>
+                    </div>
+                    <ul class="pricing-units">
+                        <li class="pricing-unit">100 MB HDD</li>
+                        <li class="pricing-unit">1 Subdomain</li>
+                        <li class="pricing-unit">2 E-mails</li>
+                        <li class="pricing-unit excluded">Two years licence</li>
+                        <li class="pricing-unit excluded">Full support</li>
+                    </ul>
+                    <a href="#" class="price-button redish-bg">Begin</a>
+                </div>
+                <div class="pricing-col pricing-col-big blue-border">
+                    <h5 class="pricing-pack">Professional</h5>
+                    <p class="price primary">$25</p>
+                    <ul class="pricing-units">
+                        <li class="pricing-unit included">100 MB HDD</li>
+                        <li class="pricing-unit included">1 Subdomain</li>
+                        <li class="pricing-unit">2 E-mails</li>
+                        <li class="pricing-unit">Two years licence</li>
+                        <li class="pricing-unit">Full support</li>
+                    </ul>
+                    <a href="#" class="price-button primary-bg">Begin</a>
+                </div>
+                <div class="pricing-col green-border">
+                    <h5 class="pricing-pack">Premium</h5>
+                    <p class="price">$60</p>
+                    <ul class="pricing-units">
+                        <li class="pricing-unit included">100 MB HDD</li>
+                        <li class="pricing-unit included">1 Subdomain</li>
+                        <li class="pricing-unit">2 E-mails</li>
+                        <li class="pricing-unit">Two years licence</li>
+                        <li class="pricing-unit">Full support</li>
+                    </ul>
+                    <a href="#" class="price-button green-bg">Begin</a>
+                </div>
             </div>
         </section>
         <section class="contact-section">
@@ -130,19 +159,19 @@
                     <input id="name" type="text" class="form-input">
                     <label for="email" class="form-label">Email</label>
                     <input id="email" type="email" class="form-input">
-                    <div class="contact-checkbox">
-                        <input type="checkbox">
+                    <label class="contact-checkbox">
+                        <input type="checkbox" class="checkbox">
                         <p class="contact-policy">I hereby give consent for my personal data included in my application to be processed for the
-                            purposes of the recruitment process under the European Parliament’s and Council of the European
-                            Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
-                            the processing of personal data and on the free movement of such data, and repealing Directive
-                            95/46/EC (Data Protection Directive)</p>
-                    </div>
-                    <button type="submit">Submit</button>
+                        purposes of the recruitment process under the European Parliament’s and Council of the European
+                        Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to
+                        the processing of personal data and on the free movement of such data, and repealing Directive
+                        95/46/EC (Data Protection Directive)</p>
+                    </label>
+                    <button type="submit" class="contact-submit primary-bg">Send</button>
 
                     </form>
                 </div>
-            </divcontact>
+
 
         </section>
     </main>
@@ -153,8 +182,8 @@
                 <p class="copy">&copy; 2019 BestShop LTD, All Rights Reserved</p>
             </div>
             <div class="icon-wrapper">
-                <a href="#" class="icon"><img src="assets/Twitter.svg"></a>
-                <a href="#" class="icon"><img src="assets/Facebook.svg"></a>
+                <a href="#" class="icon"><img src="assets/Twitter.svg" alt=""></a>
+                <a href="#" class="icon"><img src="assets/Facebook.svg" alt=""></a>
             </div>
         </div>
     </footer>
