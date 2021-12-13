@@ -11,19 +11,30 @@
     --secondary-font: 'Open Sans', sans-serif
 }
 
-.redish {
+.redish-bg {
     background-color: var(--color-redish);
 }
-.primary {
+.primary-bg {
     background-color: var(--color-primary);
 }
-.green {
+.green-bg {
     background-color: var(--color-green);
 }
-.white {
+.white-bg {
     background-color: var(--color-white);
 }
 
+.redish {
+    color: var(--color-redish)
+}
+
+.primary {
+    color: var(--color-primary)
+}
+
+.green {
+    color: var(--color-green)
+}
 
 html {
     font-size: 62.5%;
@@ -375,31 +386,99 @@ Pricing Section
     line-height: 4.2rem;
     color: var(--color-black);
     margin-top: 100px;
-
 }
 
 .pricing-section-wrapper {
     max-width: 1266px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 179px;
+    padding: 50px 0;
 }
 
-.pricing-col1 {
-    margin-top: 71px;
+.pricing-col {
     width: 372px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    height: 461px;
+    border-radius: 18px;
+    position: relative;
 }
 
-.include {
-    background: url("../assets/Checkmark-1.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.pricing-col-big {
+    width: 405px;
+    height: 500px;
+}
+
+.red-border {
+    border: 1px solid var(--color-redish);
+}
+
+.blue-border {
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.green-border {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-pack {
+    margin-top: 34px;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-black);
+    text-transform: capitalize;
+    margin-bottom: 14px;
+}
+
+.price {
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 4.6rem;
+}
+
+.pricing-units {
+    margin-bottom: 81px;
+}
+
+.pricing-unit {
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 4.1rem;
+    color: var(--color-black);
+    text-align: center;
+}
+
+.pricing-unit::before {
+    content: "";
+    background: url("../assets/Checkmark-1.svg") no-repeat;
     width: 11px;
     height: 11px;
-    margin-left: 10px;
-    display: block;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.excluded::before {
+    background: url("../assets/Close.svg") no-repeat;
+}
+
+.price-button {
+    color: var(--color-white);
+    padding: 16px 57px;
+    border-radius: 23px;
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    content: "";
+    position: absolute;
+    bottom: -21px;
 }
 
 /*
@@ -484,11 +563,12 @@ Contact Section
 
 .contact-checkbox {
     display: flex;
+    margin-top: 30px;
 }
 
 .checkbox:focus{
-    background-color: white;
-    border: 1px solid #6A6A6A;
+    border: 1px solid var(--color-grey);
+    margin-right: 30px;
 }
 
 .checkbox[type="checkbox"] {
@@ -497,13 +577,36 @@ Contact Section
     height: 24px;
     border-radius: 4px;
     position: relative;
+    outline: none;
 }
 
 .checkbox:checked {
     background-image: url("../assets/Checkmark.svg");
-    background-size: 12px;
     background-position: center;
+    background-size: 13px;
     background-repeat: no-repeat;
+}
+
+.contact-policy {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: var(--color-grey);
+    margin-bottom: 20px;
+}
+
+.contact-submit {
+    color:var(--color-white);
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    font-family: var(--secondary-font);
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    width: 226px;
+    height: 57px;
+    align-self: flex-end;
 }
 
 
