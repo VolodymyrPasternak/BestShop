@@ -38,6 +38,8 @@
 
 html {
     font-size: 62.5%;
+    font-family: var(--primary-font);
+    color: var(--color-black);
 }
 
 * {
@@ -69,7 +71,6 @@ a {
 
 .page-header-logo {
     color: var(--color-primary);
-    font-family: var(--primary-font);
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 3.7rem;
@@ -88,7 +89,6 @@ a {
 
 .page-nav-item:hover {
     border-bottom: 4px solid var(--color-primary);
-    color: var(--color-black);
 }
 
 .page-nav-item {
@@ -114,11 +114,9 @@ Open Section
 
 .open-section-header {
     margin-top: 130px;
-    font-family: var(--primary-font);
     font-size: 4.9rem;
     line-height: 5.7rem;
     font-weight: 400;
-    color: var(--color-black);
 }
 
 .open-section-content {
@@ -127,7 +125,6 @@ Open Section
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
-    color: var(--color-black);
 }
 
 .open-section-button {
@@ -137,7 +134,6 @@ Open Section
     font-weight: 700;
     line-height: 2.2rem;
     color: var(--color-white);
-    background-color: var(--color-primary);
     padding: 22px 157px;
     border-radius: 40px;
     display: inline-block;
@@ -160,11 +156,9 @@ Statistic section
 
 .statistic-section-header {
     margin: 100px 0;
-    font-family: var(--primary-font);
     font-size: 3.6rem;
     font-weight: 400;
     line-height: 4.2rem;
-    color: var(--color-black);
     text-align: center;
 }
 
@@ -295,11 +289,9 @@ Benefit section
 }
 
 .benefit-block-content-header {
-    font-family: var(--primary-font);
     font-size: 3.6rem;
     line-height: 4.2rem;
     font-weight: 400;
-    color: var(--color-black);
     margin-bottom: 30px;
 }
 
@@ -308,7 +300,6 @@ Benefit section
     font-size: 1.6rem;
     line-height: 2.2rem;
     font-weight: 400;
-    color: var(--color-black);
     display: block;
     margin-bottom: 50px;
 }
@@ -380,11 +371,9 @@ Pricing Section
 }
 
 .pricing-section-header {
-    font-family: var(--primary-font);
     font-size: 3.6rem;
     font-weight: 400;
     line-height: 4.2rem;
-    color: var(--color-black);
     margin-top: 100px;
 }
 
@@ -429,10 +418,8 @@ Pricing Section
 
 .pricing-pack {
     margin-top: 34px;
-    font-family: var(--primary-font);
     font-size: 2rem;
     font-weight: 700;
-    color: var(--color-black);
     text-transform: capitalize;
     margin-bottom: 14px;
 }
@@ -452,7 +439,6 @@ Pricing Section
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 4.1rem;
-    color: var(--color-black);
     text-align: center;
 }
 
@@ -499,8 +485,6 @@ Contact Section
 }
 
 .contact-header {
-    font-family: var(--primary-font);
-    color: var(--color-black);
     font-size: 4.9rem;
     font-weight: 400;
     line-height: 5.7rem;
@@ -509,7 +493,6 @@ Contact Section
 
 .contact-text {
     font-family: var(--secondary-font);
-    color: var(--color-black);
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
@@ -566,18 +549,13 @@ Contact Section
     margin-top: 30px;
 }
 
-.checkbox:focus{
-    border: 1px solid var(--color-grey);
-    margin-right: 30px;
-}
-
 .checkbox[type="checkbox"] {
     appearance: none;
     width: 24px;
     height: 24px;
     border-radius: 4px;
     position: relative;
-    outline: none;
+    border: 1px solid var(--color-grey);
 }
 
 .checkbox:checked {
@@ -594,6 +572,8 @@ Contact Section
     line-height: 1.7rem;
     color: var(--color-grey);
     margin-bottom: 20px;
+    width: 405px;
+    margin-left: 10px;
 }
 
 .contact-submit {
@@ -607,6 +587,7 @@ Contact Section
     width: 226px;
     height: 57px;
     align-self: flex-end;
+    border: none;
 }
 
 
@@ -631,7 +612,6 @@ Page Footer
 
 .page-footer-logo {
     color: var(--color-primary);
-    font-family: var(--primary-font);
     font-weight: 300;
     font-size: 2.6rem;
     line-height: 3rem;
