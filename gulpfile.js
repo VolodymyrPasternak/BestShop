@@ -17,7 +17,7 @@ function buildStyles() {
     return gulp.src('./scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'compressed'
         }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write())
