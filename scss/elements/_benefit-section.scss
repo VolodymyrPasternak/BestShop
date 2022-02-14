@@ -1,0 +1,272 @@
+.benefit-section {
+  background-color: $color-light-grey;
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-section-wrapper {
+  max-width: 1124px;
+  width: 100%;
+  margin: 10.5rem 0;
+}
+
+.benefit-block {
+  background-color: $color-white;
+  margin: 0 3rem 3.7rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 37rem;
+  max-width: 112.4rem;
+}
+
+.benefit-block:last-child {
+  background-color: $color-light-grey;
+}
+
+.benefit-block-content {
+  max-width: 41.6rem;
+  margin: 3.5rem;
+}
+
+.benefit-block-content-last {
+  max-width: 62.3rem;
+  width: 100%;
+  height: 37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 3.5rem;
+  background-color: $color-white;
+}
+
+$benefit-block-image3-maxWidth: 44rem;
+.benefit-block-image3 {
+  max-width: $benefit-block-image3-maxWidth;
+  height: 37rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-green;
+}
+
+.benefit-block-image3-trumpet {
+  max-width: $benefit-block-image3-maxWidth * 0.67;
+  margin: $benefit-block-image3-maxWidth * 0.0681;
+}
+
+.line {
+  max-width: 32.8rem;
+  height: .4rem;
+}
+
+.benefit-block-content-header {
+ @include textFormat ($primary-font, 3.6rem, 400, 4.2rem, $color-black);
+  margin-bottom: 30px;
+}
+
+.benefit-block-content-text {
+  @include textFormat ($secondary-font, 1.6rem, 400, 2.2rem, $color-black);
+  display: block;
+  margin-bottom: 5rem;
+}
+
+$benefit-block-image1-maxWidth: 43.3rem;
+
+.benefit-block-image1 {
+  margin-right: 7.1rem;
+  max-width: $benefit-block-image1-maxWidth;
+  position: relative;
+}
+
+.benefit-block-image1::after {
+  content: "";
+  position: absolute;
+  width: $benefit-block-image1-maxWidth * 0.4157;
+  height: $benefit-block-image1-maxWidth * 0.4157;
+  border-radius: 4.1rem;
+  transform: rotate(45deg);
+  right: $benefit-block-image1-maxWidth * 0.1039;
+  top: $benefit-block-image1-maxWidth * 0.1039;
+  background-color: $color-redish;
+}
+
+.benefit-block-image1-macbook {
+  width: $benefit-block-image1-maxWidth*0.89;
+  content: "";
+  position: relative;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  margin-top: $benefit-block-image1-maxWidth * 0.1755;
+  margin-right: $benefit-block-image1-maxWidth * 0.15;
+}
+
+$benefit-block-image2-maxWidth: 42.6rem;
+
+.benefit-block-image2 {
+  margin-left: 7rem;
+  position: relative;
+}
+
+.benefit-block-image2::after {
+  content: "";
+  width: $benefit-block-image2-maxWidth * 0.7511;
+  height: $benefit-block-image2-maxWidth * 0.7511;
+  border-radius: 50%;
+  background-color: $color-primary;
+  position: absolute;
+  left: 0;
+  bottom: $benefit-block-image2-maxWidth * 0.0469;
+}
+
+.benefit-block-image2-iphone {
+  width: $benefit-block-image2-maxWidth;
+  z-index: 1;
+  position: relative;
+  bottom: 0;
+}
+
+@media (max-width: 970px) {
+  $benefit-block-image1-maxWidth: 32.5rem;
+  .benefit-block-image1 {
+    margin-right: 3.5rem;
+    max-width: $benefit-block-image1-maxWidth;
+  }
+  .benefit-block-image1::after {
+    width: $benefit-block-image1-maxWidth * 0.4157;
+    height: $benefit-block-image1-maxWidth * 0.4157;
+    right: $benefit-block-image1-maxWidth * 0.1039;
+    top: $benefit-block-image1-maxWidth * 0.1039;
+  }
+  .benefit-block-image1-macbook {
+    width: $benefit-block-image1-maxWidth*0.89;
+    margin-top: $benefit-block-image1-maxWidth * 0.1755;
+    margin-right: $benefit-block-image1-maxWidth * 0.15;
+  }
+
+  $benefit-block-image2-maxWidth: 31.95rem;
+  .benefit-block-image2 {
+    margin-left: 3.5rem;
+  }
+  .benefit-block-image2::after {
+    width: $benefit-block-image2-maxWidth * 0.7511;
+    height: $benefit-block-image2-maxWidth * 0.7511;
+    bottom: $benefit-block-image2-maxWidth * 0.0469;
+  }
+  .benefit-block-image2-iphone {
+    width: $benefit-block-image2-maxWidth;
+  }
+
+  $benefit-block-image3-maxWidth: 33rem;
+  .benefit-block-image3 {
+    max-width: $benefit-block-image3-maxWidth;
+  }
+  .benefit-block-image3-trumpet {
+    max-width: $benefit-block-image3-maxWidth * 0.67;
+    margin: $benefit-block-image3-maxWidth * 0.0681;
+  }
+}
+
+@media (max-width: 750px) {
+  .benefit-section-wrapper {
+    margin: 0;
+  }
+  .benefit-block {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 4.2rem 3rem;
+  }
+  .benefit-block-content-header {
+    @include textFormat ($primary-font, 3rem, 400, 3.5rem, $color-black);
+  }
+  .benefit-block-content-text {
+    @include textFormat ($secondary-font, 1.4rem, 400, 1.9rem, $color-black);
+  }
+  .benefit-block-content {
+    margin: 2.5rem 2.1rem;
+  }
+  $benefit-block-image1-maxWidth: 21.65rem;
+  .benefit-block-image1 {
+    max-width: $benefit-block-image1-maxWidth;
+    margin-right: 0;
+  }
+  .benefit-block-image1::after {
+    width: $benefit-block-image1-maxWidth * 0.4157;
+    height: $benefit-block-image1-maxWidth * 0.4157;
+    right: $benefit-block-image1-maxWidth * 0.1039;
+    top: $benefit-block-image1-maxWidth * 0.1039;
+  }
+  .benefit-block-image1-macbook {
+    width: $benefit-block-image1-maxWidth*0.89;
+    margin-top: $benefit-block-image1-maxWidth * 0.1755;
+    margin-right: $benefit-block-image1-maxWidth * 0.15;
+  }
+
+  $benefit-block-image2-maxWidth: 21.3rem;
+  .benefit-block-image2 {
+    order: 1;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+  .benefit-block-image2::after {
+    width: $benefit-block-image2-maxWidth * 0.7511;
+    height: $benefit-block-image2-maxWidth * 0.7511;
+    bottom: $benefit-block-image2-maxWidth * 0.0469;
+  }
+  .benefit-block-image2-iphone {
+    width: $benefit-block-image2-maxWidth;
+  }
+
+  .benefit-block-content-text {
+    margin-bottom: 0;
+  }
+  .line {
+    display: none;
+  }
+  .benefit-block:last-child {
+    background-color: white;
+  }
+  .benefit-block-content-last {
+    max-width: 41.6rem;
+    margin: 2.5rem 2.2rem;
+    padding: 0;
+    order: 1;
+    height: auto;
+  }
+
+  $benefit-block-image3-maxWidth: 100%;
+  .benefit-block-image3 {
+    max-width: $benefit-block-image3-maxWidth;
+    padding-top: 15%;
+  }
+  .benefit-block-image3-trumpet {
+    max-width: $benefit-block-image3-maxWidth * 0.9;
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefit-block-image3 {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .benefit-block-content-last {
+    padding: 2.5rem 2.2rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .benefit-block-image3 {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .benefit-block-image3 {
+    height: 19.5rem;
+  }
+}
