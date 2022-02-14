@@ -1,0 +1,144 @@
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-section-header {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  margin-top: 10rem;
+}
+
+.pricing-section-wrapper {
+  max-width: 126.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17.9rem;
+  padding: 5rem 0;
+}
+
+.pricing-col {
+  width: 37.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 46.1rem;
+  border-radius: 18px;
+  position: relative;
+}
+
+.pricing-col-big {
+  width: 40.5rem;
+  height: 50rem;
+}
+
+.red-border {
+  border: 1px solid $color-redish;
+}
+
+.blue-border {
+  border: 1px solid $color-primary;
+  box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.green-border {
+  border: 1px solid $color-green;
+}
+
+.pricing-pack {
+
+}
+
+.pricing-pack-title {
+  margin-top: 3.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1.4rem;
+}
+
+.pricing-pack-price {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-size: 4.6rem;
+}
+
+.pricing-units {
+  margin-bottom: 8.1rem;
+}
+
+.pricing-unit {
+  @include textFormat ($secondary-font, 1.4rem, 400, 4.1rem, $color-black);
+  text-align: center;
+}
+
+.pricing-unit::before {
+  content: "";
+  background: url("../../assets/checkmark-1.svg") no-repeat;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.excluded::before {
+  background: url("../../assets/close.svg") no-repeat;
+}
+
+.price-button {
+  @include textFormat ($secondary-font, 1.3rem, 700, 1.3rem, $color-white);
+  padding: 1.6rem 5.7rem;
+  border-radius: 2.3rem;
+  content: "";
+  position: absolute;
+  bottom: -2.1rem;
+}
+
+@media (max-width: 1170px) {
+  .pricing-section-wrapper {
+    justify-content: space-evenly;
+  }
+  .pricing-col {
+    width: 29.3rem;
+  }
+  .pricing-col-big {
+    width: 33.9rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .pricing-section-header {
+    margin-top: 5.3rem;
+  }
+  .pricing-section-wrapper {
+    padding-top: 1.4rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .pricing-section-wrapper {
+    flex-direction: column;
+  }
+  .pricing-col {
+    height: 25.1rem;
+    margin-bottom: 5.4rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .pricing-col-big {
+    height: 27.7rem;
+  }
+  .pricing-pack {
+    margin: 0 auto;
+  }
+  .pricing-units {
+    margin: 2.5rem 1.1rem 5.1rem 0;
+  }
+  .pricing-unit {
+    text-align: left;
+  }
+}
