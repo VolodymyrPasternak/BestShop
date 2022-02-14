@@ -6,16 +6,21 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop Market</title>
-    <link href="css/reset.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" >
+    <link href="css/main.css" rel="stylesheet" >
 </head>
 <body>
     <header class="page-header">
         <div class="page-header-wrapper container">
             <a href="#" class="page-header-logo">BestShop</a>
+            <button class="page-nav-burger">
+                <strong>Menu</strong>
+                <span></span>
+                <span></span>
+                <span class="hide"></span>
+            </button>
             <nav class="page-nav">
                 <ul class="page-nav-wrapper">
                     <li><a href="#" class="page-nav-item">why us</a></li>
@@ -31,36 +36,36 @@
             <h1 class="open-section-header">Sell More!</h1>
             <p class="open-section-content">Open shop on our platform and increase your sales</p>
             <a href="#" class="open-section-button primary-bg">Open your shop</a>
-            <img src="assets/Background.png" alt="Photo with macbook, iphone, notebook, planner and a cup of coffee" class="open-section-image">
+            <img src="assets/background.png" alt="Photo with macbook, iphone, notebook, planner and a cup of coffee" class="open-section-image">
         </section>
-        <section class="statistic-section">
+        <section class="statistic-section container">
             <h2 class="statistic-section-header">The most popular sales platform in country</h2>
             <div class="statistic-element-wrapper">
                 <div class="statistic-element">
-                    <div class="statistic-element-circle redish-bg">
-                        <img src="assets/Person.svg" alt="An icon in the form of a person's sylet" class="statistic-element-person">
+                    <div class="statistic-element-circle">
+                        <img src="assets/person.svg" alt="An icon in the form of a person's sylet" class="statistic-element-person">
                     </div>
                     <h4 class="statistic-element-header">100000+</h4>
                     <p class="statistic-element-text">daily entries</p>
                 </div>
                 <div class="statistic-element">
-                    <div class="statistic-element-circle primary-bg">
-                        <img src="assets/Eye.svg" alt="Icon in the form of a human eye" class="statistic-element-eye">
+                    <div class="statistic-element-circle">
+                        <img src="assets/eye.svg" alt="Icon in the form of a human eye" class="statistic-element-eye">
                     </div>
                     <h4 class="statistic-element-header">2000000+</h4>
                     <p class="statistic-element-text">seen products<br>
                         every day</p>
                 </div>
                 <div class="statistic-element">
-                    <div class="statistic-element-circle green-bg">
-                        <img src="assets/Catalog.svg" alt="Icon in the form of a catalog" class="statistic-element-catalog">
+                    <div class="statistic-element-circle">
+                        <img src="assets/catalog.svg" alt="Icon in the form of a catalog" class="statistic-element-catalog">
                     </div>
                     <h4 class="statistic-element-header">10000+</h4>
                     <p class="statistic-element-text">added posts daily</p>
                 </div>
             </div>
         </section>
-        <section class="benefit-section">
+        <section class="benefit-section container">
             <div class="benefit-section-wrapper">
                 <div class="benefit-block">
                     <div class="benefit-block-content">
@@ -71,12 +76,12 @@
                         <div class="line redish-bg"></div>
                     </div>
                     <div class="benefit-block-image1">
-                        <img src="assets/Macbook.png" alt="Photo with a laptop" class="benefit-block-image1-macbook">
+                        <img src="assets/macbook.png" alt="Photo with a laptop" class="benefit-block-image1-macbook">
                     </div>
                 </div>
                 <div class="benefit-block">
                     <div class="benefit-block-image2">
-                        <img src="assets/iPhone.png" alt="Photo with a mobile phone" class="benefit-block-image2-iphone">
+                        <img src="assets/iphone.png" alt="Photo with a mobile phone" class="benefit-block-image2-iphone">
                     </div>
                     <div class="benefit-block-content">
                         <h4 class="benefit-block-content-header">Your shop is<br>
@@ -88,15 +93,15 @@
                     </div>
                 </div>
                 <div class="benefit-block">
-                    <div class="benefit-block-content-last white-bg">
+                    <div class="benefit-block-content-last">
                         <h4 class="benefit-block-content-header">Increase recognition<br> your brand!</h4>
                         <p class="benefit-block-content-text">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua. Ut enim ad minim veniam.</p>
                         <div class="line green-bg"></div>
                     </div>
-                    <div class="benefit-block-image3 green-bg">
-                        <img src="assets/Trumpet.png" alt="Photo with a trumpet" class="benefit-block-image3-trumpet">
+                    <div class="benefit-block-image3">
+                        <img src="assets/trumpet.png" alt="Photo with a trumpet" class="benefit-block-image3-trumpet">
                     </div>
                 </div>
             </div>
@@ -105,9 +110,9 @@
             <h4 class="pricing-section-header">Pricing</h4>
             <div class="pricing-section-wrapper">
                 <div class="pricing-col red-border">
-                    <div>
-                        <h5 class="pricing-pack">basic</h5>
-                        <p class="price redish">$0</p>
+                    <div class="pricing-pack">
+                        <h5 class="pricing-pack-title">basic</h5>
+                        <p class="pricing-pack-price redish">$0</p>
                     </div>
                     <ul class="pricing-units">
                         <li class="pricing-unit">100 MB HDD</li>
@@ -119,20 +124,24 @@
                     <a href="#" class="price-button redish-bg">Begin</a>
                 </div>
                 <div class="pricing-col pricing-col-big blue-border">
-                    <h5 class="pricing-pack">Professional</h5>
-                    <p class="price primary">$25</p>
+                    <div class="pricing-pack">
+                        <h5 class="pricing-pack-title">Professional</h5>
+                        <p class="pricing-pack-price primary">$25</p>
+                    </div>
                     <ul class="pricing-units">
                         <li class="pricing-unit included">100 MB HDD</li>
                         <li class="pricing-unit included">1 Subdomain</li>
                         <li class="pricing-unit">2 E-mails</li>
                         <li class="pricing-unit">Two years licence</li>
-                        <li class="pricing-unit">Full support</li>
+                        <li class="pricing-unit excluded">Full support</li>
                     </ul>
                     <a href="#" class="price-button primary-bg">Begin</a>
                 </div>
                 <div class="pricing-col green-border">
-                    <h5 class="pricing-pack">Premium</h5>
-                    <p class="price">$60</p>
+                    <div class="pricing-pack">
+                        <h5 class="pricing-pack-title">Premium</h5>
+                        <p class="pricing-pack-price">$60</p>
+                    </div>
                     <ul class="pricing-units">
                         <li class="pricing-unit included">100 MB HDD</li>
                         <li class="pricing-unit included">1 Subdomain</li>
@@ -144,14 +153,14 @@
                 </div>
             </div>
         </section>
-        <section class="contact-section">
+        <section class="contact-section container">
             <div class="contact-wrapper">
                 <div class="contact-col1">
                     <h4 class="contact-header">Any questions?</h4>
                     <p class="contact-text">Leave your email address or contact us!</p>
                     <div class="contact-data-wrapper">
-                        <img src="assets/Mail%20Icon.svg" alt="Icon in the form of a list" class="contact-icon"><span class="contact-data">info@bestshop.xyz</span>
-                        <img src="assets/Phone%20Icon.svg" alt="Icon in the form of headphone" class="contact-icon"><span class="contact-data">123 456 789</span>
+                        <div><img src="assets/mail_icon.svg" alt="Icon in the form of a list" class="contact-icon"><span class="contact-data">info@bestshop.xyz</span></div>
+                        <div><img src="assets/phone_icon.svg" alt="Icon in the form of headphone" class="contact-icon"><span class="contact-data">123 456 789</span></div>
                     </div>
                 </div>
                     <form class="contact-col2">
@@ -167,7 +176,7 @@
                             the processing of personal data and on the free movement of such data, and repealing Directive
                             95/46/EC (Data Protection Directive)</span>
                         </label>
-                        <button type="submit" class="contact-submit primary-bg">Send</button>
+                        <button type="submit" class="contact-submit">Send</button>
                     </form>
                 </div>
         </section>
@@ -179,10 +188,11 @@
                 <p class="copy">&copy; 2019 BestShop LTD, All Rights Reserved</p>
             </div>
             <div class="icon-wrapper">
-                <a href="#" class="icon"><img src="assets/Twitter.svg" alt="Twitter icon"></a>
-                <a href="#" class="icon"><img src="assets/Facebook.svg" alt="Facebook icon"></a>
+                <a href="#" class="icon"><img src="assets/twitter.svg" alt="Twitter icon"></a>
+                <a href="#" class="icon"><img src="assets/facebook.svg" alt="Facebook icon"></a>
             </div>
         </div>
     </footer>
 </body>
+<script src="app.js"></script>
 </html>
