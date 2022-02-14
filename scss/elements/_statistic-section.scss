@@ -1,0 +1,105 @@
+.statistic-section {
+  display: grid;
+  margin: 10rem auto 12.1rem auto;
+}
+
+.statistic-section-header {
+  margin-bottom: 10rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  text-align: center;
+}
+
+.statistic-element-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1124px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.statistic-element {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.statistic-element-circle {
+  width: 6.3rem;
+  height: 6.3rem;
+  border-radius: 50%;
+  position: relative;
+  align-self: center;
+}
+
+.statistic-element:nth-child(1) .statistic-element-circle {
+  background-color: $color-redish;
+}
+.statistic-element:nth-child(2) .statistic-element-circle {
+  background-color: $color-primary;
+}
+.statistic-element:nth-child(3) .statistic-element-circle {
+  background-color: $color-green;
+}
+
+.statistic-element-person {
+  width: 4.4rem;
+  position: absolute;
+  content: "";
+  right: -20%;
+  bottom: 12%;
+}
+
+.statistic-element-eye {
+  width: 6.6rem;
+  position: absolute;
+  content: "";
+  right: -37%;
+  bottom: 20%;
+}
+
+.statistic-element-catalog {
+  width: 5.2rem;
+  position: absolute;
+  content: "";
+  right: -34%;
+  bottom: 12%;
+}
+
+.statistic-element-header {
+  @include textFormat ($primary-font, 2rem,
+  800, 2.4rem, $color-black);
+  letter-spacing: .6rem;
+  text-align: center;
+  margin-top: 1.3rem;
+}
+
+.statistic-element-text {
+  @include textFormat ($primary-font, 1.7rem,
+  400, 2rem, $color-grey);
+  text-align: center;
+  margin-top: 1.9rem;
+}
+
+@media (max-width: 620px) {
+  .statistic-section {
+    margin: 5rem auto;
+  }
+  .statistic-section-header {
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+    @include textFormat ($primary-font,
+            3rem, 400, 3.5rem, $color-black);
+  }
+  .statistic-element-wrapper {
+    flex-direction: column;
+  }
+  .statistic-element {
+    margin: 2.5rem auto 0 auto;
+  }
+
+}
